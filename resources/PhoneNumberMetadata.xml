@@ -8042,7 +8042,7 @@
       </voip>
     </territory>
     <territory id="EE" countryCode="372" internationalPrefix="00" mobileNumberPortableRegion="true">
-      &lt;!-- Updated at: 2023-11-12T10:15:55.000Z --&gt;
+      &lt;!-- Updated at: 2023-11-12T10:50:40.649Z --&gt;
       <availableFormats>
         <numberFormat pattern="(0|1|2|3|4|5|6|7|8|9)">
           <leadingDigits/>
@@ -11431,7 +11431,7 @@
     </territory>
     <territory id="HU" countryCode="36" internationalPrefix="00" nationalPrefix="06" mobileNumberPortableRegion="true">
       
-      &lt;!-- Updated at: 2023-11-12T10:15:54.871Z --&gt;
+      &lt;!-- Updated at: 2023-11-12T10:50:40.400Z --&gt;
       
     
       <territory id="HU" countryCode="36" internationalPrefix="00" nationalPrefix="06" mobileNumberPortableRegion="true">
@@ -11473,34 +11473,34 @@
         </nationalNumberPattern>
         </noInternationalDialling>
         <fixedLine>
-          <possibleLengths national="['8']"/>
+          <possibleLengths national="8"/>
           <exampleNumber>12345678</exampleNumber>
-          <nationalNumberPattern>(?:22|24|26|28|32|34|36|42|45|47|49|52|54|56|59|62|66|69|72|74|76|78|82|84|87|89|92|94|96|1)</nationalNumberPattern>
+          <nationalNumberPattern>(?:(?:24|25|26|27|28|29|32|33|34|35|36|37|42|44|45|46|47|48|49|52|53|54|55|56|57|59|62|63|66|68|69|72|73|74|75|76|77|78|79|82|83|84|85|87|88|89|92|93|94|95|96|99|1|22|23)\d{8})</nationalNumberPattern>
         </fixedLine>
         <mobile>
-          <possibleLengths national="['9']"/>
+          <possibleLengths national="9"/>
           <exampleNumber>201234567</exampleNumber>
-          <nationalNumberPattern>(?:30|50|70)</nationalNumberPattern>
+          <nationalNumberPattern>(?:(?:30|31|50|70|20)\d{9})</nationalNumberPattern>
         </mobile>
         <tollFree>
-          <possibleLengths national="['8']"/>
+          <possibleLengths national="8"/>
           <exampleNumber>80123456</exampleNumber>
-          <nationalNumberPattern>(?:80)</nationalNumberPattern>
+          <nationalNumberPattern>(?:(?:80)\d{8})</nationalNumberPattern>
         </tollFree>
         <premiumRate>
-          <possibleLengths national="['8']"/>
+          <possibleLengths national="8"/>
           <exampleNumber>90123456</exampleNumber>
-          <nationalNumberPattern>(?:90)</nationalNumberPattern>
+          <nationalNumberPattern>(?:(?:90|91)\d{8})</nationalNumberPattern>
         </premiumRate>
         <voip>
           <possibleLengths national="9"/>
           <exampleNumber>211234567</exampleNumber>
-          <nationalNumberPattern>21\d{7}</nationalNumberPattern>
+          <nationalNumberPattern>(?:(?:21)\d{9})</nationalNumberPattern>
         </voip>
         <uan>
           <possibleLengths national="9"/>
           <exampleNumber>381234567</exampleNumber>
-          <nationalNumberPattern>38\d{7}</nationalNumberPattern>
+          <nationalNumberPattern>(?:(?:38)\d{9})</nationalNumberPattern>
         </uan>
       </territory>
     </territory>
