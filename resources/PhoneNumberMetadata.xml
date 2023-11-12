@@ -7058,111 +7058,89 @@
       </uan>
     </territory>
     <territory id="CZ" countryCode="420" internationalPrefix="00" mobileNumberPortableRegion="true">
-      <availableFormats>
-        <numberFormat pattern="(\d{3})(\d{3})(\d{3})">
-          <leadingDigits>
+      &lt;!-- Updated at: 2023-11-12T11:59:34.827Z --&gt;
+      <territory id="CZ" countryCode="420" internationalPrefix="00" mobileNumberPortableRegion="true">
+        <availableFormats>
+          <numberFormat pattern="(\d{3})(\d{3})(\d{3})">
+            <leadingDigits>
             [2-8]|
             9[015-7]
           </leadingDigits>
-          <format>$1 $2 $3</format>
-        </numberFormat>
-        <numberFormat pattern="(\d{2})(\d{3})(\d{3})(\d{2})">
-          <leadingDigits>96</leadingDigits>
-          <format>$1 $2 $3 $4</format>
-        </numberFormat>
-        <numberFormat pattern="(\d{2})(\d{3})(\d{3})(\d{3})">
-          <leadingDigits>9</leadingDigits>
-          <format>$1 $2 $3 $4</format>
-        </numberFormat>
-        <numberFormat pattern="(\d{3})(\d{3})(\d{3})(\d{3})">
-          <leadingDigits>9</leadingDigits>
-          <format>$1 $2 $3 $4</format>
-        </numberFormat>
-      </availableFormats>
-      <generalDesc>
-        <nationalNumberPattern>
+            <format>$1 $2 $3</format>
+          </numberFormat>
+          <numberFormat pattern="(\d{2})(\d{3})(\d{3})(\d{2})">
+            <leadingDigits>96</leadingDigits>
+            <format>$1 $2 $3 $4</format>
+          </numberFormat>
+          <numberFormat pattern="(\d{2})(\d{3})(\d{3})(\d{3})">
+            <leadingDigits>9</leadingDigits>
+            <format>$1 $2 $3 $4</format>
+          </numberFormat>
+          <numberFormat pattern="(\d{3})(\d{3})(\d{3})(\d{3})">
+            <leadingDigits>9</leadingDigits>
+            <format>$1 $2 $3 $4</format>
+          </numberFormat>
+        </availableFormats>
+        <generalDesc>
+          <nationalNumberPattern>
           (?:
             [2-578]\d|
             60
           )\d{7}|
           9\d{8,11}
         </nationalNumberPattern>
-      </generalDesc>
-      <fixedLine>
-        <possibleLengths national="9"/>
-        <exampleNumber>212345678</exampleNumber>
-        <nationalNumberPattern>
-          (?:
-            2\d|
-            3[1257-9]|
-            4[16-9]|
-            5[13-9]
-          )\d{7}
-        </nationalNumberPattern>
-      </fixedLine>
-      <mobile>
-        <possibleLengths national="9"/>
-        <exampleNumber>601123456</exampleNumber>
-        <nationalNumberPattern>
-          (?:
-            60[1-8]|
-            7(?:
-              0[2-5]|
-              [2379]\d
-            )
-          )\d{6}
-        </nationalNumberPattern>
-      </mobile>
-      <tollFree>
-        <possibleLengths national="9"/>
-        <exampleNumber>800123456</exampleNumber>
-        <nationalNumberPattern>800\d{6}</nationalNumberPattern>
-      </tollFree>
-      <premiumRate>
-        <possibleLengths national="9"/>
-        <exampleNumber>900123456</exampleNumber>
-        <nationalNumberPattern>
-          9(?:
-            0[05689]|
-            76
-          )\d{6}
-        </nationalNumberPattern>
-      </premiumRate>
-      <sharedCost>
-        <possibleLengths national="9"/>
-        <exampleNumber>811234567</exampleNumber>
-        <nationalNumberPattern>8[134]\d{7}</nationalNumberPattern>
-      </sharedCost>
-      <personalNumber>
-        <possibleLengths national="9"/>
-        <exampleNumber>700123456</exampleNumber>
-        <nationalNumberPattern>70[01]\d{6}</nationalNumberPattern>
-      </personalNumber>
-      <voip>
-        <possibleLengths national="9"/>
-        <exampleNumber>910123456</exampleNumber>
-        <nationalNumberPattern>9[17]0\d{6}</nationalNumberPattern>
-      </voip>
-      <uan>
-        <possibleLengths national="9"/>
-        <exampleNumber>972123456</exampleNumber>
-        <nationalNumberPattern>
-          9(?:
-            5\d|
-            7[2-4]
-          )\d{6}
-        </nationalNumberPattern>
-      </uan>
-      <voicemail>
-        <possibleLengths national="[9-12]"/>
-        <exampleNumber>93123456789</exampleNumber>
-        <nationalNumberPattern>
+        </generalDesc>
+        <fixedLine>
+          <possibleLengths national="9"/>
+          <exampleNumber>212345678</exampleNumber>
+          <nationalNumberPattern>(?:2\d{9}|31\d{9}|32\d{9}|35\d{9}|37\d{9}|38\d{9}|39\d{9}|41\d{9}|46\d{9}|47\d{9}|48\d{9}|49\d{9}|51\d{9}|53\d{9}|54\d{9}|55\d{9}|56\d{9}|57\d{9}|58\d{9}|59\d{9})</nationalNumberPattern>
+        </fixedLine>
+        <mobile>
+          <possibleLengths national="9"/>
+          <exampleNumber>601123456</exampleNumber>
+          <nationalNumberPattern>(?:60[1-8]\d{9}|61[0-4]\d{9}|70[2-9]\d{9}|700\d{9}|7[2-3]\d{9}|77\d{9}|790[0-9]\d{9})</nationalNumberPattern>
+        </mobile>
+        <tollFree>
+          <possibleLengths national="9"/>
+          <exampleNumber>800123456</exampleNumber>
+          <nationalNumberPattern>(?:800\d{9}|800\d{9})</nationalNumberPattern>
+        </tollFree>
+        <premiumRate>
+          <possibleLengths national="9"/>
+          <exampleNumber>900123456</exampleNumber>
+          <nationalNumberPattern>(?:900\d{9}|905\d{9}|906\d{9}|908\d{9}|909\d{9}|976\d{9})</nationalNumberPattern>
+        </premiumRate>
+        <sharedCost>
+          <possibleLengths national="9"/>
+          <exampleNumber>811234567</exampleNumber>
+          <nationalNumberPattern>(?:83[0-9]\d{9}|84[3-6]\d{9}|81[0-9]\d{9})</nationalNumberPattern>
+        </sharedCost>
+        <personalNumber>
+          <possibleLengths national="9"/>
+          <exampleNumber>700123456</exampleNumber>
+          <nationalNumberPattern>(?:700\d{9})</nationalNumberPattern>
+        </personalNumber>
+        <voip>
+          <possibleLengths national="3,9"/>
+          <exampleNumber>910123456</exampleNumber>
+          <nationalNumberPattern>(?:910\d{3}|970\d{3}|910\d{9}|970\d{9})</nationalNumberPattern>
+        </voip>
+        <uan>
+          <possibleLengths national="9"/>
+          <exampleNumber>972123456</exampleNumber>
+          <nationalNumberPattern>(?:84[0-2]\d{9}|84[7-9]\d{9})</nationalNumberPattern>
+        </uan>
+        <voicemail>
+          <possibleLengths national="[9-12]"/>
+          <exampleNumber>93123456789</exampleNumber>
+          <nationalNumberPattern>
           9(?:
             3\d{9}|
             6\d{7,10}
           )
         </nationalNumberPattern>
-      </voicemail>
+        </voicemail>
+      </territory>
     </territory>
     <territory id="DE" countryCode="49" internationalPrefix="00" nationalPrefix="0" mobileNumberPortableRegion="true">
       <availableFormats>
@@ -8042,7 +8020,10 @@
       </voip>
     </territory>
     <territory id="EE" countryCode="372" internationalPrefix="00" mobileNumberPortableRegion="true">
-      &lt;!-- Updated at: 2023-11-12T10:50:40.649Z --&gt;
+      
+      &lt;!-- Updated at: 2023-11-12T11:59:34.733Z --&gt;
+      
+    
       <availableFormats>
         <numberFormat pattern="(0|1|2|3|4|5|6|7|8|9)">
           <leadingDigits/>
@@ -11431,7 +11412,10 @@
     </territory>
     <territory id="HU" countryCode="36" internationalPrefix="00" nationalPrefix="06" mobileNumberPortableRegion="true">
       
-      &lt;!-- Updated at: 2023-11-12T10:50:40.400Z --&gt;
+      
+      &lt;!-- Updated at: 2023-11-12T11:59:34.597Z --&gt;
+      
+    
       
     
       <territory id="HU" countryCode="36" internationalPrefix="00" nationalPrefix="06" mobileNumberPortableRegion="true">
