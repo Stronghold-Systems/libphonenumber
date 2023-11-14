@@ -7058,7 +7058,7 @@
       </uan>
     </territory>
     <territory id="CZ" countryCode="420" internationalPrefix="00" mobileNumberPortableRegion="true">
-      &lt;!-- Updated at: 2023-11-14T17:24:02.391Z --&gt;
+      &lt;!-- Updated at: 2023-11-14T17:35:47.865Z --&gt;
       <availableFormats>
         <numberFormat pattern="(\d{3})(\d{3})(\d{3})">
           <leadingDigits>
@@ -7960,7 +7960,7 @@
     </territory>
     <territory id="EE" countryCode="372" internationalPrefix="00" mobileNumberPortableRegion="true">
       
-      &lt;!-- Updated at: 2023-11-14T17:24:01.628Z --&gt;
+      &lt;!-- Updated at: 2023-11-14T17:35:46.611Z --&gt;
       
     
       <availableFormats>
@@ -11352,7 +11352,7 @@
     <territory id="HU" countryCode="36" internationalPrefix="00" nationalPrefix="06" mobileNumberPortableRegion="true">
       
       
-      &lt;!-- Updated at: 2023-11-14T17:23:52.494Z --&gt;
+      &lt;!-- Updated at: 2023-11-14T17:35:41.106Z --&gt;
       
     
       
