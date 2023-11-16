@@ -11349,37 +11349,7 @@
         </nationalNumberPattern>
       </voip>
     </territory>
-    <territory id="HU" countryCode="36" internationalPrefix="00" nationalPrefix="06" mobileNumberPortableRegion="true">
-      
-      
-      &lt;!-- Updated at: 2023-11-14T17:35:41.106Z --&gt;
-      
-    
-      
-    
-      <availableFormats>
-        <numberFormat pattern="(\d)(\d{3})(\d{4})" nationalPrefixFormattingRule="($NP $FG)">
-          <leadingDigits>1</leadingDigits>
-          <format>$1 $2 $3</format>
-        </numberFormat>
-        <numberFormat pattern="(\d{2})(\d{3})(\d{3})" nationalPrefixFormattingRule="($NP $FG)">
-          <leadingDigits>
-            [27][2-9]|
-            3[2-7]|
-            4[24-9]|
-            5[2-79]|
-            6|
-            8[2-57-9]|
-            9[2-69]
-          </leadingDigits>
-          <format>$1 $2 $3</format>
-        </numberFormat>
-        <numberFormat pattern="(\d{2})(\d{3})(\d{3,4})" nationalPrefixFormattingRule="$NP $FG">
-          <leadingDigits>[2-9]</leadingDigits>
-          <format>$1 $2 $3</format>
-        </numberFormat>
-      </availableFormats>
-    </territory>
+
     <territory id="ID" countryCode="62" internationalPrefix="00[89]" nationalPrefix="0">
       <availableFormats>
         <numberFormat pattern="(\d)(\d{3})(\d{3})">
