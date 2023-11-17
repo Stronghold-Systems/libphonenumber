@@ -1,7 +1,10 @@
 <?xml version="1.0" ?>
 
 <project name="libphonenumber-javascript" default="compile">
-  
+  <property name="closure-compiler.dir"
+            value="${basedir}/../../closure-compiler" />
+  <property name="closure-compiler.jar"
+            value="${closure-compiler.dir}/bazel-bin/compiler_unshaded_deploy.jar" />
   <property name="closure-library.dir"
             value="${basedir}/../../closure-library" />
   <property name="closure-linter.dir"
@@ -16,42 +19,44 @@
     <attribute name="outputwrapper" default="(function(){%output%})();" />
     <element name="extraflags" optional="yes" />
     <sequential>
-      <exec executable="google-closure-compiler" failonerror="true" logError="true">
-    	<arg line='--entry_point="@{entrypoint}"' />
-    	<arg line='--js_output_file="@{outputfile}"' />
-    	<arg line='--js="${closure-library.dir}/closure/goog/**.js"' />
-    	<arg line='--js="${closure-library.dir}/third_party/closure/goog/**.js"' />
-    	<arg line="--output_wrapper=@{outputwrapper}" />
-    	<arg line="--compilation_level=@{compilationlevel}" />
-    	<arg line="--warning_level=VERBOSE" />
-    	<arg line="--jscomp_error=accessControls" />
-    	<arg line="--jscomp_error=checkDebuggerStatement" />
-    	<arg line="--jscomp_error=checkRegExp" />
-    	<arg line="--jscomp_error=checkTypes" />
-    	<arg line="--jscomp_error=checkVars" />
-    	<arg line="--jscomp_error=const" />
-    	<arg line="--jscomp_error=constantProperty" />
-    	<arg line="--jscomp_error=duplicate" />
-    	<arg line="--jscomp_error=duplicateMessage" />
-    	<arg line="--jscomp_error=es5Strict" />
-    	<arg line="--jscomp_error=externsValidation" />
-    	<arg line="--jscomp_error=extraRequire" />
-    	<arg line="--jscomp_error=globalThis" />
-    	<arg line="--jscomp_error=invalidCasts" />
-    	<arg line="--jscomp_error=misplacedTypeAnnotation" />
-    	<arg line="--jscomp_error=missingProperties" />
-    	<arg line="--jscomp_error=missingRequire" />
-    	<arg line="--jscomp_error=nonStandardJsDocs" />
-    	<arg line="--jscomp_error=strictModuleDepCheck" />
-    	<arg line="--jscomp_error=suspiciousCode" />
-    	<arg line="--jscomp_error=typeInvalidation" />
-    	<arg line="--jscomp_error=undefinedVars" />
-    	<arg line="--jscomp_error=unknownDefines" />
-    	<arg line="--jscomp_error=uselessCode" />
-    	<arg line="--jscomp_error=visibility" />
-    <extraflags />
-</exec>
-
+      <exec executable="java" failonerror="true" logError="true">
+        <arg value="-jar" />
+        <arg value="${closure-compiler.jar}" />
+        <arg line='--entry_point="@{entrypoint}"' />
+        <arg line='--js_output_file="@{outputfile}"' />
+        <arg line='--js="${closure-library.dir}/closure/goog/**.js"' />
+        <arg line='--js="${closure-library.dir}/third_party/closure/goog/**.js"' />
+        <arg line="--output_wrapper=@{outputwrapper}" />
+        <arg line="--compilation_level=@{compilationlevel}" />
+        <arg line="--warning_level=VERBOSE" />
+        <arg line="--jscomp_error=accessControls" />
+        <arg line="--jscomp_error=checkDebuggerStatement" />
+        <arg line="--jscomp_error=checkRegExp" />
+        <arg line="--jscomp_error=checkTypes" />
+        <arg line="--jscomp_error=checkVars" />
+        <arg line="--jscomp_error=const" />
+        <arg line="--jscomp_error=constantProperty" />
+        <arg line="--jscomp_error=duplicate" />
+        <arg line="--jscomp_error=duplicateMessage" />
+        <arg line="--jscomp_error=es5Strict" />
+        <arg line="--jscomp_error=externsValidation" />
+        <arg line="--jscomp_error=extraRequire" />
+        <arg line="--jscomp_error=globalThis" />
+        <arg line="--jscomp_error=invalidCasts" />
+        <arg line="--jscomp_error=misplacedTypeAnnotation" />
+        <arg line="--jscomp_error=missingProperties" />
+        <arg line="--jscomp_error=missingRequire" />
+        <arg line="--jscomp_error=nonStandardJsDocs" />
+        <arg line="--jscomp_error=strictModuleDepCheck" />
+        <arg line="--jscomp_error=suspiciousCode" />
+        <arg line="--jscomp_error=typeInvalidation" />
+        <arg line="--jscomp_error=undefinedNames" />
+        <arg line="--jscomp_error=undefinedVars" />
+        <arg line="--jscomp_error=unknownDefines" />
+        <arg line="--jscomp_error=uselessCode" />
+        <arg line="--jscomp_error=visibility" />
+        <extraflags />
+      </exec>
     </sequential>
   </macrodef>
 
